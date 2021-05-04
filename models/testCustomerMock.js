@@ -5,7 +5,7 @@ let testCustomerMock = [
         price: "10.91",
         basketId: "basketID",
         paymentGroup: "OTHER",
-        callbackUrl: "https://webhook.site/ad1e4b23-d1f1-473f-a1fd-795bacf63f98",
+        callbackUrl: "https://www.iyzico.com/en/business/pay-with-iyzico",
         currency: "TRY",
         paidPrice: "1.91",
         enabledInstallments: [
