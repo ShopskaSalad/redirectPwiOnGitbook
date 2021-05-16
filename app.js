@@ -21,14 +21,13 @@ dotEnv.config();
 // Variables
 var initializeRequestPath = 'https://sandbox-api.iyzipay.com/payment/pay-with-iyzico/initialize'
 const port = 3000
-let redirectUrlPath;
-
+ 
 
 // TODO: PKI String Algorithm
 // Header&Credentials Sandbox iyzico
 const configSandbox = {
     headers: {
-        'Authorization': 'IYZWS sandbox-Uc8cxE7Y2c1kXdJ7JyiSgkyCSW8m8pth:zsDALTAGC6TxpOE/FMs9TFYy9fM=',
+        'Authorization': 'IYZWS sandbox-Uc8cxE7Y2c1kXdJ7JyiSgkyCSW8m8pth:JV9tN2fepCm1oXw3zUbmyYry61Q=',
         'Content-Type': 'application/json',
         'x-iyzi-rnd': '123456789'
     }
@@ -81,6 +80,8 @@ var requestBody = {
     ]
 }
 
+let redirectUrlPath;
+
 
 // POST
 axios.post(initializeRequestPath, requestBody, configSandbox)
@@ -98,4 +99,6 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(port)
+app.listen(port, ()=>{
+    console.log("aasd");
+})
